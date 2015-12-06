@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary_500</item>
+        <!--   darker variant of colorPrimary (for status bar, contextual app bars) -->
+        <item name="colorPrimaryDark">@color/primary_700</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/accent_500</item>
+        <item name="colorButtonNormal">@color/accent_500</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/primary_700</item>
+    </style>
+
+    <style name="Fullscreen" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="CustomFloaterTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TitleLabel" parent="android:TextAppearance.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_500</item>
+    </style>
+
+    <style name="HorizontalLine">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/md_grey_300</item>
+        <item name="android:layout_marginBottom">@dimen/main_margin</item>
+        <item name="android:layout_marginTop">@dimen/main_margin</item>
+    </style>
+
+    <style name="ButtonDisabled">
+        <item name="android:textColor">@color/disabled_text_button</item>
+        <item name="android:background">@color/disabled_background_button</item>
+    </style>
+
+    <style name="BrandButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/accent_500</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SecondTitleLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:disabledAlpha">50</item>
+    </style>
+
+</resources>
