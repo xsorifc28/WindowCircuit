@@ -16,26 +16,6 @@
         <item name="windowActionBar">false</item>
     </style>
 
-    <style name="CustomFloaterTextAppearance" parent="android:TextAppearance.Small">
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textAlignment">center</item>
-    </style>
-
-    <style name="TitleLabel" parent="android:TextAppearance.Large">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/primary_500</item>
-    </style>
-
-    <style name="HorizontalLine">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">1dp</item>
-        <item name="android:background">@color/md_grey_300</item>
-        <item name="android:layout_marginBottom">@dimen/main_margin</item>
-        <item name="android:layout_marginTop">@dimen/main_margin</item>
-    </style>
-
     <style name="ButtonDisabled">
         <item name="android:textColor">@color/disabled_text_button</item>
         <item name="android:background">@color/disabled_background_button</item>
@@ -46,11 +26,19 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="SecondTitleLabel">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
-        <item name="android:disabledAlpha">50</item>
+    <style name="BrandButtonStyle.Green" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/md_green_500</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BrandButtonStyle.Red" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/md_red_500</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BrandButtonStyle.Indigo" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/md_indigo_500</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>

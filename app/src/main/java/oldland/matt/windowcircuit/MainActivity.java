@@ -1,5 +1,7 @@
 package oldland.matt.windowcircuit;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     String UUID = "Samed-Nexus6P";
 
-    Button on, off;
+    Button on, off, shutdown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +35,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         on = (Button) findViewById(R.id.on);
         off = (Button) findViewById(R.id.off);
+        shutdown = (Button) findViewById(R.id.shutdown);
 
         on.setOnClickListener(this);
         off.setOnClickListener(this);
+        shutdown.setOnClickListener(this);
 
         connectToPubnub();
     }
@@ -96,6 +100,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.off:
                 sendMessage("off");
+                break;
+            case R.id.shutdown:
+                new AlertDialog.Builder(this)
+                        .setTitle("Shutdown")
+                        .setCancelable(false)
+                        .setMessage("Are you sure you want to shutdown?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                sendMessage("shutdown");
+                            }
+                        })
+                        .setNegativeButton("No",null)
+                        .show();
                 break;
         }
 

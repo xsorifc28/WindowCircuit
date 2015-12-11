@@ -4,5 +4,6 @@
     <string name="off">Off</string>
     <string name="publish_key">pub-c-d0bec096-c3a9-4b36-b36e-0561e88fa577</string>
     <string name="subscribe_key">sub-c-8fbbf754-9c4e-11e5-bcd8-0619f8945a4f</string>
+    <string name="shutdown">Shutdown</string>
 
 </resources>

@@ -1,13 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:background="@color/primary_300"
+    android:layout_height="match_parent" android:background="@color/white"
     tools:context="com.xsor.colorclock.LaunchActivity"
-    android:weightSum="2"
+    android:weightSum="3"
     android:orientation="vertical">
 
 
     <Button
-        style="@style/BrandButtonStyle"
+        android:theme="@style/BrandButtonStyle.Green"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -18,7 +18,7 @@
         android:textSize="32sp" />
 
     <Button
-        style="@style/BrandButtonStyle"
+        android:theme="@style/BrandButtonStyle.Red"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -28,4 +28,17 @@
         android:textColor="@color/white"
         android:textSize="32sp"
         android:enabled="true" />
+
+    <Button
+        android:theme="@style/BrandButtonStyle.Indigo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/shutdown"
+        android:id="@+id/shutdown"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+
 </LinearLayout>
